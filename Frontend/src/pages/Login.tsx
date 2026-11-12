@@ -1,18 +1,17 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
 
-function Login() {
+function Login({ onLogin }: { onLogin: () => void }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+const handleLogin = (e: FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-  const handleLogin = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  console.log("Email:", email);
+  console.log("Password entered");
 
-    console.log("Email:", email);
-    console.log("Password entered");
-
-    alert("Login page is working!");
-  };
+  onLogin();
+};
 
   return (
     <div className="login-page">

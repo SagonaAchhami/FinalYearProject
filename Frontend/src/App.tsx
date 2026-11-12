@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("login");
@@ -10,7 +11,8 @@ function App() {
     <>
       {currentPage === "login" ? (
         <div>
-          <Login />
+          <Login onLogin={() => setCurrentPage("dashboard")} />
+
           <p style={{ textAlign: "center", marginTop: "-30px" }}>
             New to Abroguide?{" "}
             <button onClick={() => setCurrentPage("register")}>
@@ -18,7 +20,7 @@ function App() {
             </button>
           </p>
         </div>
-      ) : (
+      ) : currentPage === "register" ? (
         <div>
           <Register />
           <p style={{ textAlign: "center", marginTop: "-30px" }}>
@@ -28,6 +30,8 @@ function App() {
             </button>
           </p>
         </div>
+      ) : (
+        <Dashboard />
       )}
     </>
   );

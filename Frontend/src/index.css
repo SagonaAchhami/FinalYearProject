@@ -165,3 +165,35 @@ body {
   border-radius: 7px;
   cursor: pointer;
 }
+
+/* Student Profile Card */
+
+.profile-card {
+  background-color: #ffffff;
+  max-width: 700px;
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card h2 {
+  color: #173b68;
+  margin-bottom: 20px;
+}
+
+.profile-card p {
+  color: #586579;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.profile-card button {
+  background-color: #e6a23c;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 10px;
+}
