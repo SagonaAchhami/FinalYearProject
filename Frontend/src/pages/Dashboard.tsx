@@ -47,6 +47,29 @@ function Dashboard() {
           </div>
         </div>
       </div>
+      
+<div className="destinations-section">
+  <h2>Popular Study Destinations</h2>
+  <p>Explore countries for your higher education journey.</p>
+
+  <div className="destination-grid">
+    <div className="destination-card">
+      <h3>Australia</h3>
+      <p>Explore universities and courses in Australia.</p>
+    </div>
+
+    <div className="destination-card">
+      <h3>United Kingdom</h3>
+      <p>Discover educational opportunities in the UK.</p>
+    </div>
+
+    <div className="destination-card">
+      <h3>Canada</h3>
+      <p>Find study opportunities across Canada.</p>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 }
