@@ -395,3 +395,24 @@ body {
     font-size: 12px;
   }
 }
+
+/* Study Preferences Section */
+
+.profile-card select:focus,
+.profile-card input:focus {
+  outline: none;
+  border-color: #315f96;
+  box-shadow: 0 0 0 3px rgba(49, 95, 150, 0.1);
+}
+
+.profile-card select {
+  cursor: pointer;
+}
+
+.profile-card .login-button {
+  transition: background-color 0.2s ease;
+}
+
+.profile-card .login-button:hover {
+  background-color: #24558e;
+}

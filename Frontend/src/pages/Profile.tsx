@@ -51,6 +51,50 @@ function Profile() {
           Save Profile
         </button>
       </div>
+      
+<div className="profile-card">
+  <h2>Study Preferences</h2>
+
+  <div className="form-group">
+    <label>Preferred Study Country</label>
+    <select defaultValue="">
+      <option value="" disabled>Select a country</option>
+      <option>Australia</option>
+      <option>United Kingdom</option>
+      <option>Canada</option>
+      <option>USA</option>
+      <option>Germany</option>
+      <option>New Zealand</option>
+    </select>
+  </div>
+
+  <div className="form-group">
+    <label>Preferred Intake</label>
+    <select defaultValue="">
+      <option value="" disabled>Select intake</option>
+      <option>January</option>
+      <option>May</option>
+      <option>September</option>
+    </select>
+  </div>
+
+  <div className="form-group">
+    <label>Estimated Annual Budget (NPR)</label>
+    <select defaultValue="">
+      <option value="" disabled>Select your budget</option>
+      <option>Below 15 Lakhs</option>
+      <option>15–25 Lakhs</option>
+      <option>25–40 Lakhs</option>
+      <option>40–60 Lakhs</option>
+      <option>Above 60 Lakhs</option>
+    </select>
+  </div>
+
+  <button className="login-button" type="button">
+    Save Preferences
+  </button>
+</div>
+
     </div>
   );
 }
