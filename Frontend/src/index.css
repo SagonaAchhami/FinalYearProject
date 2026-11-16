@@ -416,3 +416,89 @@ body {
 .profile-card .login-button:hover {
   background-color: #24558e;
 }
+
+/* Saved Universities */
+
+.saved-universities {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.saved-universities h2 {
+  color: #173b68;
+  margin-bottom: 10px;
+}
+
+.saved-universities > p {
+  color: #7b8494;
+  margin-bottom: 25px;
+}
+
+.university-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.university-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.university-card h3 {
+  color: #173b68;
+  margin-bottom: 15px;
+}
+
+.university-card p {
+  color: #7b8494;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.save-button,
+.saved-button {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.save-button {
+  background: #173b68;
+  color: white;
+}
+
+.saved-button {
+  background: #e6a23c;
+  color: white;
+}
+
+.saved-summary {
+  background: white;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 12px;
+}
+
+.saved-summary h3 {
+  color: #173b68;
+  margin-bottom: 12px;
+}
+
+.saved-summary p {
+  color: #586579;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .university-grid {
+    grid-template-columns: 1fr;
+  }
+}

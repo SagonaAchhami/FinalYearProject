@@ -1,4 +1,5 @@
 
+import SavedUniversities from "../components/SavedUniversities";
 function Dashboard() {
   return (
     <div className="dashboard">
@@ -69,9 +70,10 @@ function Dashboard() {
     </div>
   </div>
 </div>
-
+<SavedUniversities />
     </div>
   );
 }
+
 
 export default Dashboard;
